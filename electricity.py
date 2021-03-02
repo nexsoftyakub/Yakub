@@ -1,0 +1,19 @@
+meter_no=int(input("Enter Meter Number:"))
+pr=int(input("Enter Prevoice Reading:"))
+cr=int(input("Enter Your current Reading:"))
+print("Meter Number=",meter_no)
+print("Privoice Reading=",pr)
+print("Current Reading=",cr)
+units=cr-pr
+bill=0
+print("Total Units=",units)
+if units<=120:
+    bill=units*2
+    print("Total Bill=",bill)
+elif units>=120 and units<150:
+    bill=units*3
+    print("Total Bill=",bill)
+elif units>=150:
+    bill=units*5
+    print("Total Bill=",bill)
+print("Thanks NPDCL")
